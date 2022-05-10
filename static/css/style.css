@@ -1,3 +1,13 @@
+/* General Color Styling */
+
+.text-light-green {
+    color: #81C14B;
+}
+
+.bg-light-green {
+    background-color: #81C14B;
+}
+
 /* Hero Image */
 
 .hero-image {

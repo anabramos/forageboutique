@@ -75,10 +75,66 @@
                     </ul>
                 </div>
             </nav>
+        </div>
 
         {% block content %}
 
         {% endblock %}
         
+        <!-- Footer -->
+        <footer class="footer bg-light-green">
+            <div class="container my-4">
+                <div class="row footer-row">
+                    <!-- delivery information -->
+                    <div class="col-xs-6 col-md-4">
+                        <h6>Delivery Info:</h6>
+                        <p>Ordered before 15pm, delivered the next day!</p>
+                        <p>Delivery only to the Netherlands(NL).</p>
+                        <p>Weekend orders are processed on the next Monday.</p>
+                    </div>
+                    <!-- contact details -->
+                    <div class="col-xs-6 col-md-4">
+                        <h6>Contact us:</h6>
+                        <p>info@forageboutique.com</p>
+                        <p>+31 20 1234 5678</p>
+                        <p>Amsterdam</p>
+                        <p>1234 AB</p>
+                    </div>
+                    <!-- newsletter -->
+                    <div class="col-xs-6 col-md-4">
+                        <h6>Sign up to our newsletter</h6>
+                        <form method="post">
+                            <div>
+                                <label>Email Address <span>*</span></label>
+                                <input type="email" value="" name="email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <!-- social media links -->
+                    <div class="col-12">
+                        <div class="list-group-horizontal text-center">
+                            <p class="mx-3">
+                                <a class="facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                            </p>
+                            <p class="mx-3">
+                                <a class="twitter" href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+                            </p>
+                            <p class="mx-3">
+                                <a class="instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- copyright website -->
+                    <div class="col-12">
+                        <p>Copyright &copy; 2022 AwesomeAnaWebDevelopemnt</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
