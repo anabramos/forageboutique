@@ -1,0 +1,8 @@
+/* Hero Image */
+
+.hero-image {
+    background-color: green;
+    background-position: center;
+    min-height: 70vh;
+    position: relative;
+}
