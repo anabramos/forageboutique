@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Condensed&display=swap');
 
 /* General Styling*/
-body, h3, h4, h5, h6 {
+body, h3, h4, h5, h6, p {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -16,12 +16,16 @@ a {
 
 /* General Color Styling */
 
+.bg-terracota {
+    background-color: #ECBA82;
+}
+
 .text-dark-green {
     color: #204E4A;
 }
 
 .bg-dark-green {
-    color: #204E4A;
+    background-color: #204E4A;
 }
 
 .text-light-green {
@@ -35,7 +39,7 @@ a {
 /* Hero Image */
 
 .hero-image {
-    background-color: green;
+    background:url('https://res.cloudinary.com/anabramos/image/upload/v1652251788/static/images/vadim-kaipov-8ZELrodSvTc-unsplash_1_xbsah5.jpg') no-repeat center center;
     background-position: center;
     min-height: 70vh;
     position: relative;
