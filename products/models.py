@@ -2,9 +2,9 @@ from django.db import models
 
 
 PLANT_SIZES = [
-    ('small (< 15cm)', 'small (< 15cm)'),
-    ('medium (15cm - 30cm)', 'medium (15cm - 30cm)'),
-    ('big (> 30cm)', 'big (> 30cm)'),
+    ('small (< 30cm)', 'small (< 30cm)'),
+    ('medium (30cm - 60cm)', 'medium (30cm - 60cm)'),
+    ('big (> 60cm)', 'big (> 60cm)'),
 ]
 
 WATER_NEED = [
@@ -51,7 +51,7 @@ class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    size = models.CharField(max_length=400, choices=PLANT_SIZES, default='medium (15cm - 30cm)', null=True, blank=True)
+    size = models.CharField(max_length=400, choices=PLANT_SIZES, default='medium (30cm - 60cm)', null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     habitat = models.ForeignKey('Habitat', null=True, blank=True, on_delete=models.SET_NULL)
