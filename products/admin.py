@@ -9,7 +9,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Habitat)
 class HabitatAdmin(admin.ModelAdmin):
-    list_display = ('name', 'water_need', 'light_need')
+    list_display = ('name', 'friendly_name', 'water_need', 'light_need')
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
