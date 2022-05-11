@@ -2,9 +2,9 @@ from django.db import models
 
 
 PLANT_SIZES = [
-    ('small', 'small (< 15cm)'),
-    ('medium', 'medium (15cm - 30cm)'),
-    ('big', '> big (30cm)'),
+    ('small (< 15cm)', 'small (< 15cm)'),
+    ('medium (15cm - 30cm)', 'medium (15cm - 30cm)'),
+    ('big (> 30cm)', 'big (> 30cm)'),
 ]
 
 WATER_NEED = [
