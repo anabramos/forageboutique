@@ -21,7 +21,7 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = 'Categories'
-        
+
     """ This Model is for the pant category """
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -55,6 +55,6 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     habitat = models.ForeignKey('Habitat', null=True, blank=True, on_delete=models.SET_NULL)
-    
+
     def __str__(self):
         return self.name
