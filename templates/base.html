@@ -49,8 +49,8 @@
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                     <a href="#" class="dropdown-item">New arrivals</a>
-                                    <a href="#" class="dropdown-item">For inside</a>
-                                    <a href="#" class="dropdown-item">For outside</a>
+                                    <a href="{% url 'products' %}?category=indoors" class="dropdown-item">House Plants</a>
+                                    <a href="{% url 'products' %}?category=outdoors" class="dropdown-item">Outdoor Plants</a>
                                     <a href="{% url 'products' %}" class="dropdown-item">All products</a>
                             </div>
                         </li>
