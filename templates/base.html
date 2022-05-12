@@ -51,7 +51,7 @@
                                     <a href="#" class="dropdown-item">New arrivals</a>
                                     <a href="#" class="dropdown-item">For inside</a>
                                     <a href="#" class="dropdown-item">For outside</a>
-                                    <a href="#" class="dropdown-item">All products</a>
+                                    <a href="{% url 'products' %}" class="dropdown-item">All products</a>
                             </div>
                         </li>
                     </ul>
@@ -118,21 +118,21 @@
                 <div class="row footer-row">
                     <!-- delivery information -->
                     <div class="col-xs-6 col-md-5">
-                        <h5><i class="fas fa-solid fa-truck"></i> Delivery Info:</h5>
+                        <h5 class="mt-2"><i class="fas fa-solid fa-truck"></i> Delivery Info:</h5>
                         <p>Ordered before 15pm, delivered the next day!</p>
                         <p>Delivery only to the Netherlands(NL).</p>
                         <p>Weekend orders are processed on the next Monday.</p>
                     </div>
                     <!-- contact details -->
                     <div class="col-xs-6 col-md-3">
-                        <h5><i class="fas fa-solid fa-headset"></i> Contact us:</h5>
+                        <h5 class="mt-2"><i class="fas fa-solid fa-headset"></i> Contact us:</h5>
                         <p>info@forageboutique.com</p>
                         <p>+31 20 1234 5678</p>
                         <p>Amsterdam, 1234 AB</p>
                     </div>
                     <!-- newsletter -->
                     <div class="col-xs-6 col-md-4">
-                        <h5><i class="fab fa-brands fa-mailchimp"></i> Sign up to our newsletter:</h5>
+                        <h5 class="mt-2"><i class="fab fa-brands fa-mailchimp"></i> Sign up to our newsletter:</h5>
                         <form method="post">
                             <div>
                                 <label>Email Address <span>*</span></label>
