@@ -13,6 +13,13 @@ h3, h4, h5, h6, {
     font-weight: 800;
 }
 
+/* General Sizing Styling*/
+
+.mh-70vh {
+    min-height: 70vh;
+}
+
+
 /* General Color Styling */
 
 .bg-terracota {
@@ -71,4 +78,15 @@ h3, h4, h5, h6, {
     font-size: 16px;
     line-height: 48px;
     width: 54px;
+}
+
+/* Anchor links */
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+.link-unstyled:hover {
+    text-decoration: underline;
 }
