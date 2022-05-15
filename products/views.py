@@ -7,7 +7,7 @@ def all_products(request):
     """ This view shows all products, and sorts in their categories """
 
     products = Product.objects.all()
-    category = None
+    categories = None
 
     if request.GET:
         if 'category' in request.GET:

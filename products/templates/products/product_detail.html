@@ -32,23 +32,20 @@
                     <p class="lead mb-0 text-right font-weight-bold">€ {{ product.price }}</p>
                     <p class="mt-3 text-justify">{{ product.description }}</p>
 
-                    <h5 class="mt-3"><i class="fas fa-solid fa-hand-holding-heart"></i></h5>
-                    <p>{{ product.habitat.friendly_name }}</p>
+                    <h6 class="mt-3"><i class="fas fa-map-marker-alt"></i> Should be placed {{ product.category }}</h6>
+                    <h6 class="mt-3"><i class="fas fa-ruler"></i> {{ product.friendly_name }} is {{ product.size }}</h6>
+                    <h6 class="mt-3"><i class="fas fa-solid fa-hand-holding-heart"></i> Requires {{ product.habitat.friendly_name }}</h6>
                     
                     {% if product.habitat.light_need == '++' %}
-                        <h5 class="mt-3"><i class="fas fa-solid fa-sun"></i></h5>
-                        <p>{{ product.friendly_name }} enjoys a ginger tan so direct sun will do them good!</p>
+                        <h6 class="mt-3"><i class="fas fa-solid fa-sun"></i> {{ product.friendly_name }} enjoys a ginger tan so direct sun will do them good!</h6>
                     {% else %}
-                        <h5 class="mt-3"><i class="fas fa-solid fa-cloud-sun"></i></h5>
-                        <p>{{ product.friendly_name }} is European, so watch out for the sunburn.</p>
+                        <h6 class="mt-3"><i class="fas fa-solid fa-cloud-sun"></i> {{ product.friendly_name }} is European, so watch out for the sunburn.</h6>
                     {% endif %}
 
                     {% if product.habitat.water_need == '++' %}
-                        <h5 class="mt-3"><i class="fas fa-tint"></i></h5>
-                        <p>{{ product.friendly_name }} is a big drinker, don't let them go dry!</p>
+                        <h6 class="mt-3"><i class="fas fa-tint"></i> {{ product.friendly_name }} is a big drinker, don't let them go dry!</h6>
                     {% else %}
-                        <h5 class="mt-3"><i class="fas fa-tint-slash"></i></h5>
-                        <p>{{ product.friendly_name }} identifies as a Teetotaler so no excessive drinking.</p>
+                        <h6 class="mt-3"><i class="fas fa-tint-slash"></i> {{ product.friendly_name }} identifies as a Teetotaler so no excessive drinking.</h6>
                     {% endif %}
                     
                 </div>
