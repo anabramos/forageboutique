@@ -79,9 +79,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="col mt-3">
+            <div class="col mt-3 text-right">
+                <button id="backToTopBtn">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
                 <hr class="w-50 mb-1">
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+
+<script type="text/javascript">
+
+    var backToTopBtn = document.getElementById("backToTopBtn")
+    var rootElement = document.documentElement
+
+    function backToTop() {
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
+    backToTopBtn.addEventListener("click", backToTop)
+
+</script>
+
 {% endblock %}
