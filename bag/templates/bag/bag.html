@@ -18,23 +18,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                    {% if bag_item %}
-                        <!-- display all products currently in the shopping cart-->
-                    {% else %}
-                        <h4>Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
-
-                        <a href="{% url 'products' %}" class="link-unstyled">
-                            <h5 class="my-5">>> Shop here for a new green friend!</h5>
-                        </a>
-                    {% endif %}
+            <div class="col text-center mt-4">
+                {% if bag_item %}
+                    <!-- display all products currently in the shopping cart-->
+                {% else %}
+                    <h4>Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
+                    <a href="{% url 'products' %}" class="link-unstyled">
+                        <h5 class="my-4">>> Shop here for a new green friend!</h5>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
-
-
-
-
 
 {% endblock %}
