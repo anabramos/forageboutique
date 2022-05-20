@@ -19,8 +19,8 @@
         </div>
         <div class="row">
             <div class="col text-center mt-4">
-                {% if bag_item %}
-                    <!-- display all products currently in the shopping cart-->
+                {% if bag_items %}
+                    <p> {{ bag_items }}</p>
                 {% else %}
                     <h4>Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
                     <a href="{% url 'products' %}" class="link-unstyled">
