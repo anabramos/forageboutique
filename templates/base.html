@@ -100,15 +100,14 @@
                         <li class="list-inline-item">
                             <a class=" text-dark-green" href="{% url 'view_bag' %}">
                                 <div class="text-center">
-                                    {% if grand_total %}
-                                        <p class="my-0 mx-2">
-                                            <i class="fas fa-solid fa-baby-carriage"></i> € {{ grand_total|floatformat:2 }}
-                                        </p>
-                                    {% else %}
-                                        <p class="my-0 mx-2">
-                                            <i class="fas fa-solid fa-baby-carriage"></i> Shopping Cart
-                                        </p>
-                                    {% endif %}
+                                    <p class="my-0 mx-2">
+                                        <i class="fas fa-solid fa-baby-carriage"></i> 
+                                        {% if grand_total %}
+                                            € {{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                             Shopping Cart
+                                        {% endif %}
+                                    </p>
                                 </div>
                             </a>
                         </li>
