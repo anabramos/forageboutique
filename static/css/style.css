@@ -78,9 +78,20 @@ h3, h4, h5, h6, {
     width: 54px;
 }
 
+.btn-green {
+    background-color: #204E4A;
+    color: #fff ;
+}
+
+.btn-green:hover {
+    color: #ECBA82;
+    text-decoration: none;
+}
+
 .btn-white {
     background-color: #fff;
     color: #204E4A;
+    text-decoration: none;
 }
 
 /* Anchor links */

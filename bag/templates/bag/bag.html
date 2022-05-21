@@ -49,6 +49,35 @@
                                         <td>€{{ item.product.price }}</td> 
                                     </tr>
                                     {% endfor %}
+                                    <tr>
+                                        <td colspan="5">
+                                            <h6 class="text-right mt-3"><strong>Subtotal: €{{ total }}</strong></h6>
+                                            <h6 class="text-right mt-3"><strong>Delivery: €{{ delivery }}</strong></h6>
+                                            <hr>
+                                            <h5 class="text-right my-4"><strong>Total: €{{ grand_total }}</strong></h5>
+                                            {% if free_delivery_delta > 0 %}
+                                                <p class="mb-1 text-danger">
+                                                    You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                                </p>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5" class="text-right">
+                                            <a href="{% url 'products' %}" class="mr-2 btn-green btn-lg">
+                                                <span>Keep Shopping</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-solid fa-baby-carriage"></i>
+                                                </span>
+                                            </a>
+                                            <a href="" class="ml-2 btn-green btn-lg">
+                                                <span>Checkout</span>
+                                                <span class="icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
 
