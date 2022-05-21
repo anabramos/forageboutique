@@ -20,7 +20,38 @@
         <div class="row">
             <div class="col text-center mt-4">
                 {% if bag_items %}
-                    <p> {{ bag_items }}</p>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-8 col-xl-10 my-2 justify-content-center">
+                            <table id="bag_display" class="data_table text-center display wrap" width="100%">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in bag_items %}
+                                    <tr>
+                                        <td class="p-3 w-25">
+                                            <img class="card-img-top img-fluid" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled">
+                                                <li>{{ item.product.friendly_name }}</li>
+                                                <li>{{ item.product.size }}</li>
+                                            </ul>
+                                        </td>
+                                        <td>€{{ item.product.price }}</td>
+                                        <td>{{ item.quantity }}</td>
+                                        <td>€{{ item.product.price }}</td> 
+                                    {% endfor %}
+                            </table>
+                            <h5 class="text-center mt-3"><strong>total cost: €{{ grand_total }}</strong></h5>
+                        </div>
+                    </div>
                 {% else %}
                     <h4>Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
                     <a href="{% url 'products' %}" class="link-unstyled">
