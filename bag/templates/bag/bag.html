@@ -51,15 +51,15 @@
                                     {% endfor %}
                                     <tr>
                                         <td colspan="5">
-                                            <h6 class="text-right mt-3"><strong>Subtotal: €{{ total }}</strong></h6>
-                                            <h6 class="text-right mt-3"><strong>Delivery: €{{ delivery }}</strong></h6>
-                                            <hr>
-                                            <h5 class="text-right my-4"><strong>Total: €{{ grand_total }}</strong></h5>
+                                            <h6 class="text-right mt-3"><strong>Subtotal: €{{ total|floatformat:2 }}</strong></h6>
+                                            <h6 class="text-right mt-3"><strong>Delivery: €{{ delivery|floatformat:2 }}</strong></h6>
                                             {% if free_delivery_delta > 0 %}
-                                                <p class="mb-1 text-danger">
-                                                    You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                                <p class="mb-1 text-right text-danger">
+                                                    You could get free delivery by spending just <strong>${{ free_delivery_delta|floatformat:2 }}</strong> more!
                                                 </p>
                                             {% endif %}
+                                            <hr>
+                                            <h5 class="text-right my-4"><strong>Total: €{{ grand_total|floatformat:2 }}</strong></h5>
                                         </td>
                                     </tr>
                                     <tr>
@@ -85,8 +85,8 @@
                     </div>
                 {% else %}
                     <h4>Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
-                    <a href="{% url 'products' %}" class="link-unstyled">
-                        <h5 class="my-4">>> Shop here for a new green friend!</h5>
+                    <a href="{% url 'products' %}" class=" my-3 btn-green btn-lg">
+                        <span> >> Shop here for a new green friend!</span>
                     </a>
                 {% endif %}
             </div>
