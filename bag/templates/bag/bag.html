@@ -45,7 +45,19 @@
                                             </ul>
                                         </td>
                                         <td>€{{ item.product.price }}</td>
-                                        <td>{{ item.quantity }}</td>
+                                        <td>
+                                            <form class="quantity-form" method="POST" action="#">
+                                                {% csrf_token %}
+                                                <span class="value-button decrease btn-green btn-lg" data-id="{{ item.item_id }}_decrease"
+                                                    value="Decrease Value">-</span>
+                                                <input type="number" id="{{ item.item_id }}" class="number" name="quantity"
+                                                    value="{{ item.quantity }}" min="1" max="3" />
+                                                <span class="value-button increase btn-green btn-lg" data-id="{{ item.item_id }}_increase"
+                                                    value="Increase Value">+</span>
+                                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                                <button type="submit" class="btn-white card-link bg-terracota">Update</button>
+                                            </form>
+                                        </td>
                                         <td>€{{ item.product.price }}</td> 
                                     </tr>
                                     {% endfor %}
@@ -92,5 +104,14 @@
             </div>
         </div>
     </div>
+
+{% endblock %}
+
+{% block postloadjs %}
+    <script type="text/javascript">
+
+
+
+    </script>
 
 {% endblock %}
