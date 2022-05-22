@@ -94,6 +94,14 @@ h3, h4, h5, h6, {
     text-decoration: none;
 }
 
+.btn-delete {
+    color: red;
+    background-color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+}
+
 /* Anchor links */
 
 .link-unstyled, .link-unstyled:link, .link-unstyled:hover {
