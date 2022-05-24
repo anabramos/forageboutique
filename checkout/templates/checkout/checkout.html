@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Checkout</h2>
+                <p>Complete the form below to finalize your purchase!</p>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+    <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex mb-3">
+                <span>Order Summary</span>
+            </h4>
+            <ul class="list-group mb-3">
+                {% for item in bag_items %}
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h5 class="my-0">{{item.product.friendly_name}} (x{{ item.quantity }}) 
+                            </h5>
+                            <h6 class="my-0">{{ item.product.name}}
+                            </h6>
+                            <h6 class="my-0">{{ item.product.size}}
+                            </h6>
+                        </div>
+                        <span>€ {{ item.product.price | calc_subtotal:item.quantity }}</span>
+                    </li>
+                {% endfor %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h5 class="my-0">Delivery</h5>
+                        <h6>Free delivery above €30</h6>
+                    </div>
+                    <span>€ {{ delivery | floatformat:2 }} </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (EUR)</span>
+                    <strong>€ {{ grand_total | floatformat:2 }}</strong>
+                </li>
+            </ul>
+            <div class="text-right">
+                <a href="{% url 'products' %}" class="mr-2 btn-green btn-lg">
+                    <span>Update Shopping Cart</span>
+                    <span class="icon">
+                        <i class="fas fa-solid fa-baby-carriage"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">My Details</h4>
+        <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+            {% csrf_token %}
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    {{ order_form.full_name | as_crispy_field }}
+                </div>
+                <div class="col-sm-6">
+                    {{ order_form.email | as_crispy_field }}
+                </div>
+                <div class="col-12">
+                    {{ order_form.phone_number | as_crispy_field }}
+                </div>
+            </div>
+                <h4 class="mb-3">Delivery address</h4>
+            <div class="row g-3">
+                <div class="col-12">
+                    {{ order_form.street_address | as_crispy_field }}
+                </div>
+                <div class="col-12">
+                    {{ order_form.city | as_crispy_field }}
+                </div>
+                <div class="col-md-5">
+                    {{ order_form.country | as_crispy_field }}
+                </div>
+                <div class="col-md-3">
+                    {{ order_form.postcode | as_crispy_field }}
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            <h4 class="my-4 my-heading-font">Payment</h4>
+            <div class="row gy-3">
+                <div class="col-12">
+                    <p>STRIPE PAYMENT INPUT GOES HERE</p>
+                </div>
+                <div class="col-12">
+                    <p class="small text-danger my-0">
+                    <span class="icon">
+                        <i class="bi bi-credit-card-2-back-fill">
+                        </i>
+                    </span>
+                    <span>Your credit card will be charged a total of 
+                        <strong>€ {{ grand_total|floatformat:2 }}
+                        </strong>
+                    </span>
+                    </p>
+                </div>
+                <div class="col-12 text-right ">
+                    <a href="" class="ml-2 btn-green btn-lg">
+                        <span>Checkout</span>
+                        <span class="icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <hr class="my-4">
+        </form>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
