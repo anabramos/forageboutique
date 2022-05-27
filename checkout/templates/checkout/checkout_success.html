@@ -24,10 +24,95 @@
             </div>
         </div>
         <div class="row g-5">
-            <div class="col-md-5 col-lg-4 order-md-last">
-            </div>
             <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Order Summary</h4>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <h6>Order Number: {{ order.order_number }}</h6>
+                        </div>
+                        <div class="col-12">
+                            <h6>Date: {{ order.date }}</h6>
+                        </div>
+                        <div class="col-12">
+                            <h6>Subtotal: € {{ order.order_total }}</h6>
+                        </div>
+                        <div class="col-12">
+                            <h6>Delivery Cost: € {{ order.delivery_cost }}</h6>
+                        </div>
+                        <div class="col-12">
+                            <h6><strong>Total: € {{ order.grand_total }}</strong></h6>
+                        </div>
+                    </div>
+                <h4 class="my-3">Order Details</h4>
+                {% for item in order.lineitems.all %}
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h5>{{ item.product.friendly_name }}</h5>
+                    </div>
+                    <div class="col-12">
+                        <h6>{{ item.product.size }}</h6>
+                    </div>
+                    <div class="col-12">
+                        <h6>Quantity: {{ item.quantity }}</h6>
+                    </div>
+                    <div class="col-12">
+                        <h6>Price € {{ item.product.price }}/piece</h6>
+                    </div>
+                </div>
+            {% endfor %}
             </div>
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex mb-3">
+                    <span>Delivery Details</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class= "d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-1">{{ order.full_name}}</h6>
+                        </div>
+                    </li>
+                    <li class= "d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-1">{{ order.street_address }}</h6>
+                        </div>
+                    </li>
+                    <li class= "d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-1">{{ order.city }}</h6>
+                        </div>
+                    </li>
+                    {% if order.postcode %}
+                        <li class= "d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-1">{{ order.postcode }}</h6>
+                            </div>
+                        </li>
+                    {% endif %}
+                    <li class= "d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-1">{{ order.country }}</h6>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="d-flex mb-3">
+                    <span>Contact Details</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class= "d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-1">E-mail: {{ order.email}}</h6>
+                        </div>
+                    </li>
+                    <li class= "d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-1">Phone number: {{ order.phone_number }}</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <hr class="w-50 mb-1">
         </div>
     </div>
 
