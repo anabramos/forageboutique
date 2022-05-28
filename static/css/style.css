@@ -81,6 +81,7 @@ h3, h4, h5, h6, {
 .btn-green {
     background-color: #204E4A;
     color: #fff ;
+    border-color: #204E4A;
 }
 
 .btn-green:hover {
@@ -108,12 +109,12 @@ h3, h4, h5, h6, {
     text-decoration: inherit;
 }
 
-a:hover {
-    text-decoration: underline !important;
+a {
+    text-decoration: none;
 }
 
-a {
-    color: inherit !important;
+a:hover {
+    text-decoration: underline !important;
 }
 
 /* Bootstrap Toasts */

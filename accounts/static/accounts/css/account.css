@@ -1,3 +1,8 @@
+.order-history {
+    max-height: 416px; /* if order history is too long, it will be displayed with scrollbar*/
+    overflow-y: auto;
+}
+
 #profile-update-form .form-control {
     color: #204E4A;
 }
