@@ -105,12 +105,15 @@ h3, h4, h5, h6, {
 /* Anchor links */
 
 .link-unstyled, .link-unstyled:link, .link-unstyled:hover {
-    color: inherit;
     text-decoration: inherit;
-  }
+}
 
-.link-unstyled:hover {
-    text-decoration: underline;
+a:hover {
+    text-decoration: underline !important;
+}
+
+a {
+    color: inherit !important;
 }
 
 /* Bootstrap Toasts */
