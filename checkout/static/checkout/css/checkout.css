@@ -22,7 +22,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #204E4A;
+    color: #aab7c4;
 }
 
 .fieldset-label {
@@ -36,6 +36,20 @@
     color: #204E4A;
     border: 1px solid #204E4A;
     border-radius: 0.3rem;
+}
+
+#id_country {
+  padding: 0px;
+}
+
+select,
+select option {
+  color: #204E4A;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #aab7c4 !important;
 }
 
 /* Loading Overlay */
