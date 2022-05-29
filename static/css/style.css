@@ -133,3 +133,39 @@ a:hover {
 .toast-capper {
     height: 2px;
 }
+
+
+/* For screen sizes from 905px wide or smaller*/
+@media screen and (max-width: 905px){
+    .responsive-font {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* For screen sizes from 768px wide or smaller*/
+@media screen and (max-width: 768px){
+    .responsive-font {
+        font-size: 1.0rem;
+    }
+
+    .hero-image {
+        min-height: 30vh;
+    }
+}
+
+
+/* For screen sizes from 480px wide or smaller*/
+@media screen and (max-width: 480px) {
+    .responsive-font {
+        font-size: 0.8rem;
+    }
+
+    h5 {
+        font-size: 1.0rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+}
