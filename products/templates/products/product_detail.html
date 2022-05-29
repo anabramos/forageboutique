@@ -54,10 +54,20 @@
                                     <option value="3">3</option>
                                 </select>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                <button type="submit" class="btn-white card-link bg-terracota">Add to Shopping Cart</button>
+                                <button type="submit" class="btn-white card-link">Add to Shopping Cart</button>
                             </div>
                         </div>
                     </form>
+                    {% if request.user.is_superuser %}
+                        <div class="text-right">
+                            <span class="mt-3">
+                                <a class="btn-white btn-lg text-dark-green" href="{% url 'edit_product' product.id %}">Edit</a>
+                            </span>
+                            <span>
+                                <a class="btn-white btn-lg text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                            </span>
+                        </div>
+                    {% endif %}
 
                 </div>
             </div>
