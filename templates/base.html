@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-auto align-items-center">
                         <li class="list-inline-item dropdown">
-                            <a class="text-dark-green" href="#" id="category-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-dark-green nav-link-header" href="#" id="category-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <p class="my-0 mx-2">Shop by Category</p>
                                 </div>
@@ -69,9 +69,9 @@
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                                 <li class="list-inline-item dropdown">
-                                    <a class="text-dark-green" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="text-dark-green nav-link-header" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <div class="text-center">
-                                            <p class="my-0 mx-2"><i class="fas fa-user-secret"></i> Admin Account</p>
+                                            <i class="fas fa-user-secret"></i> Admin Account
                                         </div>
                                     </a>
                                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -82,7 +82,7 @@
                                 </li>
                             {% else %}
                                 <li class="list-inline-item dropdown">
-                                    <a class="text-dark-green" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="text-dark-green nav-link-header" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <div class="text-center">
                                             <p class="my-0 mx-2"><i class="fas fa-solid fa-user"></i> My Account</p>
                                         </div>
@@ -95,7 +95,7 @@
                             {% endif %}
                         {% else %}
                             <li class="list-inline-item dropdown">
-                                <a class="text-dark-green" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="text-dark-green nav-link-header" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div class="text-center">
                                         <p class="my-0 mx-2"><i class="fas fa-solid fa-user"></i> My Account</p>
                                     </div>
@@ -107,7 +107,7 @@
                             </li>
                         {% endif %}   
                         <li class="list-inline-item">
-                            <a class=" text-dark-green" href="{% url 'view_bag' %}">
+                            <a class="text-dark-green nav-link-header" href="{% url 'view_bag' %}">
                                 <div class="text-center">
                                     <p class="my-0 mx-2">
                                         <i class="fas fa-solid fa-baby-carriage"></i> 
