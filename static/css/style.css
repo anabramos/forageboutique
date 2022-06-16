@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Condensed&display=swap');
 
 /* General Font Styling */
+
+body {
+    width:100%; 
+    overflow-x: hidden;
+}
+
 body, h3, h4, h5, h6, p, span, a, button {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -172,6 +178,19 @@ a {
 .toast-capper {
     height: 2px;
 }
+
+/* Mailchimp Style */
+
+#mc_embed_signup {
+    clear: left; 
+    font: 14px Helvetica,Arial,sans-serif; 
+    width: 300px;
+}
+
+#mc_embed_signup_form {
+    padding: 0;
+}
+
 
 
 /* For screen sizes from 905px wide or smaller*/
