@@ -184,13 +184,12 @@ a {
 #mc_embed_signup {
     clear: left; 
     font: 14px Helvetica,Arial,sans-serif; 
-    width: 300px;
+    width: 80%;
 }
 
 #mc_embed_signup_form {
     padding: 0;
 }
-
 
 
 /* For screen sizes from 905px wide or smaller*/
