@@ -53,6 +53,55 @@ The website uses a combination of Pangolin and Roboto Condensed, with a fall bac
 #### Icons
 This website makes use of icons from Font Awesome to give a new visual element and reinforce the content already displayed. The Icons are used to indicate social media links on the website's footer.
 
+## Features
+
+### Homepage
+- The navbar is a big menu for what the website has to offer. It contains links to other active pages within the website, providing a easy and intuitive navigation. 
+
+    <img src="media/features/navbar.PNG" style="width: 50%" />
+
+- The About section brings to the audience information about the businesses to create a more personal approach.
+
+    <img src="media/features/about-section.PNG" style="width: 30%" />
+
+- The footer provides to the user details about the business, a newsletter signup input, links to the relevant social media of the business owner, as well as the copyright information of the web developer.
+
+    <img src="media/features/footer.PNG" style="width: 30%" />
+
+### Products
+- The products section displays all products sold by Forage Boutique, with images, name and prices. These are linked to the web applications' database. Clicking on the image will take the customer to the product details page, where more information about the products are displayed. 
+
+    <img src="media/features/products.PNG" style="width: 50%" />
+    <img src="media/features/product-details.PNG" style="width: 30%" />
+
+### Shopping Cart
+- In the shopping cart feature, users can review and update the contents of their shopping cart before going to the checkout page, or decide to continue shopping. 
+
+    <img src="media/features/shopping-cart.PNG" style="width: 30%" />
+
+### Checkout
+- The checkout feature allows users to confirm and make payments of they purchase. The checkout form can only be submitted if the information is valid and the same applies to the stripe payment details.
+
+    <img src="media/features/checkout-page.PNG" style="width: 30%" />
+
+### Checkout Successfully
+- The checkout successfull page will present to the user their order details and confirmation of payment. If the user is a registered user, these will also be saved under their user accounts. 
+
+    <img src="media/features/checkout-confirmation.PNG" style="width: 30%" />
+
+### User Account
+- In the 'my account' section users are able to check their user details and their orders. They can also modify their user details and shippoing information, as well as look back into orders fully. 
+
+    <img src="media/features/user-profile.PNG" style="width: 30%" />
+
+### Admin Account
+- When an admin is logged in, they have access to the admin account with product managment tools and forms that perform CRUD functionality. This means admins can add, edit and remove any products or information related to products.
+
+    <img src="media/features/add-product.PNG" style="width: 30%" />
+    <img src="media/features/product-managment.PNG" style="width: 20%" />
+
+
+
 
 ## Technologies Used
 
@@ -93,7 +142,6 @@ This website makes use of icons from Font Awesome to give a new visual element a
 The website was deployed using Heroku. My repository is build using the Code Institute Python Essentials Template. The deployment was done on the second day of building this repository. To deploy this website I used Code Institute's Django Deployment Instructions provided in the course section I Think Therefore I Blog > Getting Set Up > Creating The Django Project Checklist. 
 
 For deployment, the following steps were taken:
-
 - On myGitpod workspace - Command Line:
 1. Install Django - `pip3 install Django==3.2 gunicorn`
 2. Install Django supporting libraries: Psycopg2 and Cloudinary `pip3 install dj_database_url psycopg2` | `pip3 install dj3-cloudinary-storage`
@@ -139,3 +187,16 @@ For deployment, the following steps were taken:
 - Before submission of project:
 31. Disable static files on Heroku Config Var
 32. Set DEBUG to False
+
+### Forking
+To use this project as a reference or starting point, or even to propose changes to it, you can fork this repository by following these steps:
+From the GitHub repository page click on 'Fork' in the top-right corner.
+Create a new repository with a new name based on this project.
+Make sure to credit the project in case you decide to use any of the original code.
+
+## Credits
+Media
+- All images for this website were taken from [Unsplash](https://unsplash.com) and can be found on [this list](https://unsplash.com/@anabramos/likes).
+
+## Acknowledgements
+A huge thanks to my mentor Samantha Dartnall, the CI slack community and tutoring team, and my friends who tested the website a couple 100 times.
