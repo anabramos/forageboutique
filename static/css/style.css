@@ -16,6 +16,7 @@ h3, h4, h5, h6, {
 /* General Sizing Styling*/
 
 .mh-70vh {
+    /* This pushes the footer down in html documents with little code*/
     min-height: 70vh;
 }
 
