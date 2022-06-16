@@ -40,4 +40,16 @@ This web application also utilizes built-in django applications, frameworks and 
 
 #### Database Structure
 
-I have connected the database to the Heroku Postgres database from the beginning of deployment. I have created original custom models, the Entity-Relationship Diagram here shows how the database models relate to each other. 
+I have connected the database to the Heroku Postgres database from the beginning of deployment. I have created original custom models, the Entity-Relationship Diagram [here](https://github.com/anabramos/forageboutique/blob/main/media/database/database.PNG) shows how the database models relate to each other. 
+
+### Design
+
+#### Colors
+The website colors are inspired by tons of green and terracota as key plant store colors. It uses dark green color and white to create contrast between text and background, and the other colors are used intertwined to reinforce borders, banners and highlight certain features/sections in the website.
+
+#### Fonts
+The website uses a combination of Pangolin and Roboto Condensed, with a fall back to sans-serif. These fonts are popularly paired together. Pangolin is used in the website for high-level headings and logo while Roboto Condensed is used for regular text and low level headings. The fonts were compared and taken from Google Fonts.
+
+#### Icons
+This website makes use of icons from Font Awesome to give a new visual element and reinforce the content already displayed. The Icons are used to indicate social media links on the website's footer.
+
