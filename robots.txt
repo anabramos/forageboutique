@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://forageboutique.herokuapp.com/sitemap.xml
