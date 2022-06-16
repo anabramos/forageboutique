@@ -7,17 +7,12 @@
                 <div class="col col-md-8 mt-5">
                     <div>
                         <h2 class="logo text-white mb-4">
-                            No plants here...
+                            Oops... This page doesn't exist. 
                         </h2>
-                        <h5>
-                            This is an error 404. You have found a page that doesn't exist. 
-                        </h5>
+                        <a href="{% url 'products' %}">
+                            <h2 class="logo text-white"><u>Looking for plants? Click here!</u></h2>
+                        </a>
                     </div>
-                </div>
-                <div class="col col-md-8 mt-5">
-                    <a href="{% url 'products' %}">
-                        <h2 class="logo text-white">Go back to shopping!</h2>
-                    </a>
                 </div>
             </div>
         </div>
