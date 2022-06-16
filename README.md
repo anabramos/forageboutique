@@ -5,6 +5,9 @@ Forage Boutique is a web application targeted at Amsterdam-based individuals who
 
 [Forage Boutique live website!](https://forageboutique.herokuapp.com/)
 
+<img src="media/features/responsive.PNG" style="width: 100%" />
+
+
 ## UX/UI
 Using core Design Thinking methods and Agile practices principles the strategy for this web application takes into consideration 2 personas: Business Owner and Client, and their respective needs. 
 
@@ -101,6 +104,75 @@ This website makes use of icons from Font Awesome to give a new visual element a
     <img src="media/features/product-managment.PNG" style="width: 20%" />
 
 
+## Testing
+
+This web application was tested manually by self, web developer friends, a few code-institute peers and family members. It was tested on different screen sizes and browsers.
+
+### Implemented & Tested User Stories
+
+#### USER STORY: Good UX/UI practices (1) - As a Customer I can navigate the website intuitively so that I can find the information I need.
+
+#### USER STORY: Good UX/UI practices (2) - As a Customer I can access all existing and relevant landing pages/features from the website's homepage so that I can easily navigate and understand what the website is offering.
+
+#### USER STORY: Navigation Bar - As a Customer I can find a website navigation bar with my shopping basket so that I can check what I have added to the basket and how much that costs.
+- The Navbar takes the user to all different pages throughout the website. It is responsive to different screen sizes, styled with collapse menu for mobile versions. 
+
+#### USER STORY: Footer - As a Customer I can find a website footer with practical details about the company so that I can get in touch with the company if I need to, or access their social media.
+- The Footer informs the user about the contact details of the company, and it provides with two different web marketing tools: Access to social media links and newsletter registration. 
+
+#### USER STORY: Responsive web application - As a Customer I can access the website on my mobile as well as my desktop so that I can use the website regardless of where I am.
+- The application has ben tested in different mobile screen sizes, using not only the telefone and computer of friends and family but also Chrome Dev tools and other online responsive testing softwares. 
+
+#### USER STORY: Messages - As a Customer I can get notifications from the website every time the status of my profile/shopping basket changes, or if there is an error so that I know what has happened and if I need to act upon it.
+- Boostrap toats are used to display messaged. The application is displaying messages that confirm user status related to registration and log-in/log-out. It also displays messages when products are added to the shopping bag and when they are purchased successfully. Lastly, they also pop up when any changes to the database are made in the front-end either by user changing their user details, or by admin adding/editing products.
+
+#### USER STORY: List of Products - As a Customer I can access a list of available products from the home page so that I can see if the product I want is available before making an account.
+- All products, their image and prices are available to the user in a page where all products are displayed. That is open to all website visitors regardless of registration. These are rendered directly from the database which means they are always up to date. The products page can be easily found in the navbar of the website.
+
+#### USER STORY: Details Products - As a Customer I can access all of the relevant information about the products (prices, description, sizes, etc.) so that I can make informed decisions before purchasing.
+- For all products, further details about the plants like description, caring details, etc. are available to the user in a separate page per product.
+
+#### USER STORY: Product Categories - As a Customer I can filter the products by categories so that I can find products that suit my preferences faster.
+- Products are separated between indoors and outdoor plants. When selecting a category, only plants from that category will be displayed. No plants are displayed on both categories.
+
+#### USER STORY: Add to Bag Functionality - As a Customer I can add products I want to purchase to my basket so that I can purchase it later.
+- In the product details page customers can add product(s) to their cart by clicking on the 'add to shopping cart' button. They will receive a confirmation message that this was sucessfully done. If they redirect to the shopping cart overview page they will see the item there.
+
+#### USER STORY: Bag overview - As a Customer I can view the overview of my basket before proceeding to checkout/purchase so that I can make any last minute changes.
+- Bag overview will show all items a customer had added to the shopping cart. Unless, if there are no items there, the page displays a message confirming that there are no products in the shopping cart and direct users to the products page to start shopping again.
+
+#### USER STORY: Stripe payment - As a Customer I can make a payment with a credit card so that I can purchase my selected products.
+- Stripe payment is well implemented and is creating successfull orders in the database, rreturning confirmation messages and a confirmaton checkout page, as well as returning successfull payments on the events tab in the stripe dashboard. 
+
+#### USER STORY: Confirmation e-mail - As a Customer I can receive e-mail confirmations with my order details so that I know that my purchase has been processed successfully.
+- E-mails are being printed to the CL locally everytime a purchase is made. Customers can access their order details on their accounts and retreive any information about their past orders. 
+
+#### USER STORY: User registration - As a Customer I can register & login on the website so that I can view my account details and orders on a 'my account' page.
+- Django allauth account system is implemented to allow users to register, login and logout. This open up the possibility of users to accessing the 'my account' page, to save their details for future purchases and retreive old orders. The registration requires users’ username, email, first and last name and a set of passwords. After registration the users’ details are saved in the database and they will then be able to login with only e-mail/username and password.
+
+#### USER STORY: Logged-in/out confirmation token - As a Customer I can easily see when I am logged in or logged out so that I know if I need to act upon that based on what I would like to do in the website.
+- The Navbar is responsive to the users status within the website, as it changes based on if users are logged in or not. For users who are not registered nor logged in, it allows them to easily find the ways to create and account or see the products available. For logged in users, they will see a link to their 'my account' page (see feature bellow) or directing them to logout.
+
+#### USER STORY: User update details - As a Customer I can update my account details and shipping address so that they are saved for future purchases, saving me time.
+- Users can edit their details, specifically their shipping address for future purchases, in their own user accounts. All changes done and saved by the admin are immediately translated to the front-end and backend of the website.
+
+#### USER STORY: Admin backend view - As a Business Owner I can log in with an admin's account so that I can access the website's backend.
+- Django Admin site well implemented. It uses username and password for validation. Only the superuser/admin has access to the backend. Regular users will not be able to log in to the admin page with their credentials.
+
+#### USER STORY: CRUD Functionality - As a Business Owner I can create, remove, update or delete products displayed on the website's front end so that the website always translates the products available at different moments.
+- Admin/superusers can add, edit and delete products, their details, images, descriptions, prices, etc. All changes done and saved by the admin are immediately translated to the front-end and backend of the website.
+
+#### USER STORY: Change Product Prices - As a Business Owner I can update the price of products from the website's front end so that I can keep the website up to date to accurately reflect the market prices.
+- Change of prices per products is possible through the CRUD functionality implemented and tested as described above.
+
+#### USER STORY: Newsletter - As a Customer I can Sign up for a newsletter so that I can receive information on new products and good deals.
+- Customers can sign up for a newsletter. After submitting their e-mail to sign-up, a message is displayed on the website. The e-mail of the newsletter subscriber is also available on the mailchimp account dashboard.
+
+#### USER STORY: Social Media Business Page - As a Business Owner I have a social media business page so that I can reach new clients.
+- Customers can access the Facebook Business page of Forage Boutique by clicking on the respective social media link on the footer of the website. This is also available [here](https://www.facebook.com/Forage-Boutique-101575012604335)
+
+
+
 
 
 ## Technologies Used
@@ -116,7 +188,7 @@ This website makes use of icons from Font Awesome to give a new visual element a
     - [Bootstrap](https://getbootstrap.com/)
     - [Google Fonts](https://fonts.google.com/)
     - [Font Awesome](https://fontawesome.com/)
-    Many more python libraries, extensions and frameworks can be found under the requirements.txt file
+    - Many more python libraries, extensions and frameworks can be found under the requirements.txt file
 
 - Tools
     - [Gitpod](https://www.gitpod.io/)
