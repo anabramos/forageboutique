@@ -15,6 +15,9 @@ Using core Design Thinking methods and Agile practices principles the strategy f
 
 All user stories are documented with their respective acceptance criteria, story points and MoSCoW prioritization on [my Github Issues](https://github.com/anabramos/forageboutique/issues) or on [this excell google sheet](https://docs.google.com/spreadsheets/d/1tIHWxuTbgwAMaqZkwu3j8kelPhfHuCNg/edit?usp=sharing&ouid=116746214337321598702&rtpof=true&sd=true)
 
+##### Future Features
+The User stories that were tagged 'Could Have' & 'Wont Have' were left Open on [my Github Issues](https://github.com/anabramos/forageboutique/issues) to represent future features that I wish to build for this application in the future.  
+
 ### Agile Practices
 
 #### Wireframes
