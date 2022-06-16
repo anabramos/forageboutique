@@ -1,12 +1,11 @@
 # Forage Boutique
 
 ## About Forage Boutique
-Forage Boutique is a web application targeted at Amsterdam-based individuals who are interested in purchasing plants. As a full-stack e-commerce web application this project was built using Django, Python, HTML, CSS and JavaScript. This is a B2C (Business to Customer) designed to create better user experience to clients and provide useful management tools for the business owner. 
+Forage Boutique is a web application targeted at Amsterdam-based individuals who are interested in purchasing plants. As a full-stack e-commerce web application this project was built using Django, Python, HTML, CSS and JavaScript. This is a B2C (Business to Customer) designed to create better user experience to clients and provide useful management tools for the business owner. This web application is strictly educational and was developed as part of the Code Institute - Diploma in Software Development (Full stack) Course.
 
 [Forage Boutique live website!](https://forageboutique.herokuapp.com/)
 
 <img src="media/features/responsive.PNG" style="width: 100%" />
-
 
 ## UX/UI
 Using core Design Thinking methods and Agile practices principles the strategy for this web application takes into consideration 2 personas: Business Owner and Client, and their respective needs. 
@@ -58,6 +57,22 @@ The website uses a combination of Pangolin and Roboto Condensed, with a fall bac
 
 #### Icons
 This website makes use of icons from Font Awesome to give a new visual element and reinforce the content already displayed. The Icons are used to indicate social media links on the website's footer.
+
+## E-commerce Strategy
+
+Forage Boutique web application is a B2C (Business to Customer) business designed to create better user experience to clients and provide useful management tools for the business owner. This means, as an e-commerce application, it is meant not only as a platform to add value to the user - plant enthusiasts wishing to purchase different plants within a small timeframe - but also provides value to the business owner as it allows them to manage their business in a more efficient way.
+
+### Aims 
+Forage Boutique is an ecommerce web application that allows plant enthusiasts and other customers to purchase indoor and outdoor plants from their home.
+
+#### Description
+Forage Boutique website provides customers from across the globe the possibility to purchase Plants from their home or for their gardens. The inviting homepage of the website attracts the user to five into the collection of plants available for sale. A welcome text also briefly describes what the company is all about, so users get familiar with the company. Anyone despite or being a registered user or not may make a purchase. This is important from a UX point of view - not everyone enjoys having to make an account to purchase something. Users can make their purchases by entering their personal details, shipping address and credit card information. If all of this information is validated, the order will be completed. Once the order is complete, customers see a confirmation page and receive a confirmation email. A registered user has the benefits of checkout faster as their default details will already be saved. They will also be able to view their order history. 
+
+#### Web Marketing
+As part of the E-commerce strategy, Forage Boutique has two different approaches to web-marketing. Firstly, is uses a [Facebook Business page](https://www.facebook.com/Forage-Boutique-101575012604335) to expand its business and atract new clients. Secondly, it has a Newsletter subscription to maintain good relationships with existing as well as potential clients that are already interested in plants overall. These two s=tool are complimentary as they both operate within differente potential audiences. 
+
+#### SEO
+In terms of Search Engine Optimization the website makes use of clear and direct language on the website that defines the purpose of the website. It includes meta tags that are descriptive of the goals of the web application and provide different key words to better frame the application. The lighthouse SEO test has scored the website with a 100% 
 
 ## Features
 
