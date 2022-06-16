@@ -53,3 +53,38 @@ The website uses a combination of Pangolin and Roboto Condensed, with a fall bac
 #### Icons
 This website makes use of icons from Font Awesome to give a new visual element and reinforce the content already displayed. The Icons are used to indicate social media links on the website's footer.
 
+
+## Technologies Used
+
+- Languages
+    - [HTML5](https://en.wikipedia.org/wiki/HTML)
+    - [CSS](https://en.wikipedia.org/wiki/CSS)
+    - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+- Libraries & Frameworks
+    - [Django](https://www.djangoproject.com/)
+    - [Bootstrap](https://getbootstrap.com/)
+    - [Google Fonts](https://fonts.google.com/)
+    - [Font Awesome](https://fontawesome.com/)
+    Many more python libraries, extensions and frameworks can be found under the requirements.txt file
+
+- Tools
+    - [Gitpod](https://www.gitpod.io/)
+    - [Github](https://github.com/)
+    - [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
+    - [Heroku](https://dashboard.heroku.com/apps)
+    - [Cloudinary](https://cloudinary.com/)
+    - [SQLite](https://www.sqlite.org/index.html)
+    - [PostgreSQL](https://www.postgresql.org/)
+    - [MBalsamiq](https://balsamiq.com/)
+    - [Coolors (color schemes generator)](https://coolors.co/)
+    - [Unsplash](https://unsplash.com/)
+    - [Am I Responsive?](http://ami.responsivedesign.is/)
+    - [WebAIM](https://webaim.org/resources/contrastchecker/)
+    - [W3C HTML Validation Service](https://validator.w3.org/)
+    - [W3C CSS Validation Service](https://validator.w3.org/)
+    - [Pep8](http://pep8online.com/)
+    - [JSHint](https://jshint.com/)
+    - [Stripe](https://en.wikipedia.org/wiki/Stripe_(company))
+
