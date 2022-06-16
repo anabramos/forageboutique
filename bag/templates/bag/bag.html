@@ -22,7 +22,7 @@
             <div class="col text-center mt-4">
                 {% if bag_items %}
                     <div class="row justify-content-center">
-                        <div class="col-sm-12 col-md-8 col-xl-10 my-2 justify-content-center">
+                        <div class="col-sm-12 col-md-8 col-xl-10 my-4 justify-content-center">
                             <table id="bag_display" class="data_table text-center display wrap" width="100%">
                                 <thead class="text-center">
                                     <tr>
@@ -109,9 +109,9 @@
                         </div>
                     </div>
                 {% else %}
-                    <h4>Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
-                    <a href="{% url 'products' %}" class=" my-3 btn-green btn-lg">
-                        <span> >> Shop here for a new green friend!</span>
+                    <h4 class="my-2">Your shopping cart is empty <i class="fas fa-heart-broken"></i></h4>
+                    <a href="{% url 'products' %}" class="my-3 btn-green btn-lg">
+                        >> Shop here for a new green friend!
                     </a>
                 {% endif %}
             </div>
