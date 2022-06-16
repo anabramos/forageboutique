@@ -106,13 +106,15 @@ This website makes use of icons from Font Awesome to give a new visual element a
 
 ## Testing
 
-This web application was tested manually by self, web developer friends, a few code-institute peers and family members. It was tested on different screen sizes and browsers.
+This web application was tested manually by self, web developer friends, a few code-institute peers and family members. It was tested on different screen sizes and browsers. Below I have gathered the feedback from these manual testings and conclusions. 
 
 ### Implemented & Tested User Stories
 
 #### USER STORY: Good UX/UI practices (1) - As a Customer I can navigate the website intuitively so that I can find the information I need.
+- The website is pleasing to look and navigate, it uses good color contrast and common language and standards related to e-commerce websites. 
 
 #### USER STORY: Good UX/UI practices (2) - As a Customer I can access all existing and relevant landing pages/features from the website's homepage so that I can easily navigate and understand what the website is offering.
+- The Navbar takes the user to the majority of different pages throughout the website. There are no webpages that exist that cannot be found through starting the navigation in the homepage. No webpage is within less than 3 webpages from the navbar. 
 
 #### USER STORY: Navigation Bar - As a Customer I can find a website navigation bar with my shopping basket so that I can check what I have added to the basket and how much that costs.
 - The Navbar takes the user to all different pages throughout the website. It is responsive to different screen sizes, styled with collapse menu for mobile versions. 
@@ -170,10 +172,6 @@ This web application was tested manually by self, web developer friends, a few c
 
 #### USER STORY: Social Media Business Page - As a Business Owner I have a social media business page so that I can reach new clients.
 - Customers can access the Facebook Business page of Forage Boutique by clicking on the respective social media link on the footer of the website. This is also available [here](https://www.facebook.com/Forage-Boutique-101575012604335)
-
-
-
-
 
 ## Technologies Used
 
