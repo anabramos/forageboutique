@@ -199,6 +199,7 @@ This web application was tested manually by self, web developer friends, a few c
 - CSS Code passed [W3C CSS Validation Service](https://validator.w3.org/) with no errors
 - Javascript code passed [JSHint validation](https://jshint.com/) with no errors
 - Python code passed [Pep8 validation](http://pep8online.com/) with no errors
+- Website passes [Lighthouse](https://en.wikipedia.org/wiki/Google_Lighthouse) accessibility reports with varying scored from 88% to 98% 
 
 ## Technologies Used
 
