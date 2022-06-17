@@ -11,7 +11,6 @@ Forage Boutique is a web application targeted at Amsterdam-based individuals who
 Using core Design Thinking methods and Agile practices principles the strategy for this web application takes into consideration 2 personas: Business Owner and Client, and their respective needs. 
 
 ### User Stories
-
 All user stories are documented with their respective acceptance criteria, story points and MoSCoW prioritization on [my Github Issues](https://github.com/anabramos/forageboutique/issues) or on [this excell google sheet](https://docs.google.com/spreadsheets/d/1tIHWxuTbgwAMaqZkwu3j8kelPhfHuCNg/edit?usp=sharing&ouid=116746214337321598702&rtpof=true&sd=true)
 
 ##### Future Features
@@ -31,15 +30,15 @@ The User stories that were tagged 'Could Have' & 'Wont Have' were left Open on [
 In response to the user stories attributed to business owner and clients, the website and its features are structured withing the following 5 Custom Django apps:
 
 1. Home
-    Concerns the design of a Front-End web application that meets accessibility guidelines and provides a set for responsive user interaction via its homepage, navbar and navigation links. It contains a homepage with information about the website and navigation links that will take the client to different website features. 
+    - Concerns the design of a Front-End web application that meets accessibility guidelines and provides a set for responsive user interaction via its homepage, navbar and navigation links. It contains a homepage with information about the website and navigation links that will take the client to different website features. 
 2. Products
-    Concerns the display of all products provided by the business owner, including prices. These are directly linked to the database and can be updated at anytime by admin users. Changes on the database are also immediately  translated to the Front-End of the website.
+    - Concerns the display of all products provided by the business owner, including prices. These are directly linked to the database and can be updated at anytime by admin users. Changes on the database are also immediately  translated to the Front-End of the website.
 3. Bag
-    Concerns the ability of clients to add and manage their bag contents and wished purchases, including modifying and deleting items from their shopping carts. 
+    - Concerns the ability of clients to add and manage their bag contents and wished purchases, including modifying and deleting items from their shopping carts. 
 4. Checkout
-    Concerns the ability of clients to make and manage their purchases using financial software Stripe. This app also includes the possibility of retreiving information about past orders. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account if they want to access their purchase history.
+    - Concerns the ability of clients to make and manage their purchases using financial software Stripe. This app also includes the possibility of retreiving information about past orders. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account if they want to access their purchase history.
 5. Accounts
-    Concerns the ability of clients to create and manage their account, including modifying the account details and shipping address. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account if they want to have their details saved for future purchases.
+    - Concerns the ability of clients to create and manage their account, including modifying the account details and shipping address. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account if they want to have their details saved for future purchases.
 
 This web application also utilizes built-in django applications, frameworks and libraries to compliment the above mentioned structure and features. 
 
