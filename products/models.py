@@ -17,6 +17,7 @@ LIGHT_NEED = [
     ('--', 'European'),
 ]
 
+
 class Category(models.Model):
     """ This Model is for the pant category """
 

@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-body, h3, h4, h5, h6, p, span, a, button {
+body, h3, h4, h5, h6, p, span, a, button, label {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
