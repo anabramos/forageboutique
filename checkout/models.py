@@ -82,6 +82,7 @@ class OrderReview(models.Model):
     order_number = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='reviews')
     product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.SET_NULL)
     content = models.TextField()
+    image = models.ImageField(null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     created_by = models.ForeignKey(UserProfile, on_delete=models.CASCADE, null=True, blank=True,)
     created_on = models.DateTimeField(auto_now_add=True)
-
