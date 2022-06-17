@@ -224,7 +224,7 @@ This web application was tested manually by self, web developer friends, a few c
     - [Cloudinary](https://cloudinary.com/)
     - [SQLite](https://www.sqlite.org/index.html)
     - [PostgreSQL](https://www.postgresql.org/)
-    - [MBalsamiq](https://balsamiq.com/)
+    - [CANVA](https://www.canva.com/)
     - [Coolors (color schemes generator)](https://coolors.co/)
     - [Unsplash](https://unsplash.com/)
     - [Am I Responsive?](http://ami.responsivedesign.is/)
