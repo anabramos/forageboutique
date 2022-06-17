@@ -76,3 +76,12 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         return f'SKU {self.product} on order {self.order.order_number}'
+
+
+class OrderReview(models.Model):
+    order_number = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='reviews')
+    product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.SET_NULL)
+    content = models.TextField()
+    created_by = models.ForeignKey(UserProfile, on_delete=models.CASCADE, null=True, blank=True,)
+    created_on = models.DateTimeField(auto_now_add=True)
+
