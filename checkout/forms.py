@@ -1,5 +1,5 @@
 from django import forms
-from .models import Order, OrderReview
+from .models import Order
 
 
 class OrderForm(forms.ModelForm):
@@ -36,19 +36,3 @@ class OrderForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
 
-
-class OrderReviewsForm(forms.ModelForm):
-    """ Form for customers to leave an Order Review """
-    class Meta:
-        model = OrderReview
-        fields = ('content', 'image', 'image_url')
-
-    def __init__(self, *args, **kwargs):
-        """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
-        """
-        super().__init__(*args, **kwargs)
-        placeholders = {
-            'content': 'Write here your Review',
-        }
