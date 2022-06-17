@@ -125,7 +125,6 @@ In terms of Search Engine Optimization the website makes use of clear and direct
 - The current structure for adding products to the shopping cart has an issue. The 'add to shopping cart' feature will allow the user to select up to 3 items of the same product and add it to its shopping cart - which will then be displayed in the shopping cart overview. One issue here is that, if the customer returns to the product details page and decides to add again 3 more of the same items, and the do that again and again from the product detail page, the shopping cart will be upgrading the delivery amounts while the quantity will remain up to 3 as in the display of the dropdown menu this is the only option. 
  - While most of the implemented bootstrap toasts are working, the ones specifically when users modify their shopping carts do not display when products quantities are updated or when products are deleted from the shopping cart.
  
-
 ## Testing
 
 This web application was tested manually by self, web developer friends, a few code-institute peers and family members. It was tested on different screen sizes and browsers. Below I have gathered the feedback from these manual testings and conclusions. 
@@ -194,6 +193,12 @@ This web application was tested manually by self, web developer friends, a few c
 
 #### USER STORY: Social Media Business Page - As a Business Owner I have a social media business page so that I can reach new clients.
 - Customers can access the Facebook Business page of Forage Boutique by clicking on the respective social media link on the footer of the website. This is also available [here](https://www.facebook.com/Forage-Boutique-101575012604335)
+
+## Validation
+
+- CSS Code passed [W3C CSS Validation Service](https://validator.w3.org/) with no errors
+- Javascript code passed [JSHint validation](https://jshint.com/) with no errors
+- Python code passed [Pep8 validation](http://pep8online.com/) with no errors
 
 ## Technologies Used
 

@@ -15,7 +15,7 @@ h1, h2, .logo {
     font-family: 'Pangolin', cursive;
 }
 
-h3, h4, h5, h6, {
+h3, h4, h5, h6 {
     font-weight: 800;
 }
 
@@ -87,7 +87,6 @@ h3, h4, h5, h6, {
 .btn-green {
     background-color: #204E4A;
     color: #fff ;
-    border-color: #204E4A;
 }
 
 .btn-green:hover {
