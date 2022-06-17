@@ -34,27 +34,27 @@
                                     <th scope="col">Order Date</th>
                                     <th scope="col">Order No.</th>
                                     <th scope="col">Products</th>
-                                    <th scope="col">Total Cost</thS>
+                                    <th scope="col">Total Cost</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {% for order in orders %}
                                     <tr>
-                                        <td scope="row">{{ order.date |date:"d F Y" }}</td>
-                                        <td scope="row">
+                                        <td>{{ order.date |date:"d F Y" }}</td>
+                                        <td>
                                             <a href="{% url 'order_history' order.order_number %}"
                                             title="{{ order.order_number }}">
                                                 {{ order.order_number|truncatechars:8 }}
                                             </a>
                                         </td>
-                                        <td scope="row">
+                                        <td>
                                             {% for item in order.lineitems.all %}
 
                                             {{ item.product.friendly_name }} x {{ item.quantity }}
                                             
                                             {% endfor %}
                                         </td>
-                                        <td scope="row">£{{ order.order_total }}</td>
+                                        <td>£{{ order.order_total }}</td>
                                     </tr>
                                 {% endfor %}
                             </tbody>
