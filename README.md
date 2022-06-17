@@ -293,6 +293,9 @@ Create a new repository with a new name based on this project.
 Make sure to credit the project in case you decide to use any of the original code.
 
 ## Credits
+
+The Forage Boutique project is based on the [Boutique Ado project by the Code Institute](https://github.com/Code-Institute-Solutions/boutique_ado_v1/), which was used as a base for this project.
+
 Media
 - All images for this website were taken from [Unsplash](https://unsplash.com) and can be found on [this list](https://unsplash.com/@anabramos/likes).
 
