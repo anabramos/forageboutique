@@ -121,6 +121,10 @@ In terms of Search Engine Optimization the website makes use of clear and direct
     <img src="media/features/add-product.PNG" style="width: 30%" />
     <img src="media/features/product-managment.PNG" style="width: 20%" />
 
+## Known Issues & Bug Fixes
+- The current structure for adding products to the shopping cart has an issue. The 'add to shopping cart' feature will allow the user to select up to 3 items of the same product and add it to its shopping cart - which will then be displayed in the shopping cart overview. One issue here is that, if the customer returns to the product details page and decides to add again 3 more of the same items, and the do that again and again from the product detail page, the shopping cart will be upgrading the delivery amounts while the quantity will remain up to 3 as in the display of the dropdown menu this is the only option. 
+ - While most of the implemented bootstrap toasts are working, the ones specifically when users modify their shopping carts do not display when products quantities are updated or when products are deleted from the shopping cart.
+ 
 
 ## Testing
 
